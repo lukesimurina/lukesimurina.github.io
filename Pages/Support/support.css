@@ -1,0 +1,280 @@
+/*
+
+#0B0C10 - Black
+#1F2833 - Lighter Black
+#ebebeb - White
+#66FCF1 - Blue
+#45A29E - Darker Blue
+
+*/
+* {
+    outline: none;
+}
+
+
+html,
+body {
+    margin: 0px;
+    overflow: auto;
+    overflow-x: hidden;
+    background-color: #ffffff;
+    padding: 0px;
+    scroll-behavior: smooth;
+    height: auto;
+}
+
+#activepage {
+    color: white;
+    font-weight: bold;
+}
+
+#activepage1 {
+    color: rgb(253, 253, 253);
+    font-weight: bold;
+}
+
+#navbar nav {
+    color: rgb(165, 165, 165);
+    z-index: 1000;
+    width: 100vw;
+    padding: 0.75em 0 0.75em 0;
+    position: absolute;
+    text-align: center;
+}
+
+#navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar nav li {
+    display: inline;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 300ms linear, color 1s linear;
+    padding: 0.4em 1em 0.4em 1em;
+    border-radius: 5em;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#navbar nav li:hover {
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+
+#navbar nav li:active {
+    background-color: rgb(63, 63, 63);
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+}
+
+#navbar1 nav {
+    color: rgb(192, 192, 192);
+    z-index: 10005;
+    width: 100vw;
+    padding: 0.75em 0 0.75em 0;
+    position: fixed;
+    background-color: #222222d5;
+    text-align: center;
+}
+
+#navbar1 nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar1 nav li {
+    display: inline;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 300ms linear, color 1s linear;
+    padding: 0.4em 1em 0.4em 1em;
+    border-radius: 5em;
+}
+
+#navbar1 li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#navbar1 nav li:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+#navbar1 nav li:active {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+}
+
+#scrolltop {
+    position: fixed;
+    left: 89vw;
+    top: 92vh;
+    display: none;
+    width: auto;
+    height: auto;
+
+}
+
+#scrolltop button {
+    background-color: rgb(179, 179, 179);
+    border-color: transparent;
+    border-radius: 500px;
+    transition: background-color 300ms linear;
+    font-size: 0.9em;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    padding: 0.5vh 1.5vw 0.5vh 1.5vw;
+}
+
+#scrolltop button:hover {
+    background-color: rgb(170, 170, 170);
+    color: black;
+}
+
+#scrolltop button:active {
+    background-color: rgb(170, 170, 170);
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+}
+
+/* EVERYTHING BELOW HERE YOU CAN TOUCH. DO NOT TOUCH ANYTHING ABOVE */
+
+.main {
+    margin: 0px;
+    height: auto;
+    display: grid;
+}
+
+.sec1 {
+    height: 30vh;
+    background-color: #3a3a3a;
+    margin: 0px;
+}
+
+.sec1 h1 {
+    color: #000000;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4em;
+    margin-top: 15vh;
+    z-index: 1;
+}
+
+.sec1 h2 {
+    color: #000000;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    margin-top: -3.5em;
+    z-index: 1;
+
+}
+
+.sec2 {
+    background-color: #2679cb;
+    height: auto;
+}
+
+
+#gradient {
+    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+    from {
+        -webkit-filter: hue-rotate(0deg);
+    }
+
+    to {
+        -webkit-filter: hue-rotate(-360deg);
+    }
+}
+
+
+.container {
+    padding: 200px;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    color: #8f8f8f;
+}
+
+.faq-drawer {
+    margin-bottom: 30px;
+}
+
+.faq-drawer__content-wrapper {
+    font-size: 1.25em;
+    line-height: 1.4em;
+    max-height: 0px;
+    overflow: hidden;
+    transition: 0.25s ease-in-out;
+}
+
+.faq-drawer__title {
+    border-top: #000 1px solid;
+    cursor: pointer;
+    display: block;
+    font-size: 1.25em;
+    font-weight: 700;
+    padding: 30px 0 0 0;
+    position: relative;
+    margin-bottom: 0;
+    transition: all 0.25s ease-out;
+}
+
+.faq-drawer__title::after {
+    border-style: solid;
+    border-width: 1px 1px 0 0;
+    content: " ";
+    display: inline-block;
+    float: right;
+    height: 10px;
+    left: 2px;
+    position: relative;
+    right: 20px;
+    top: 2px;
+    transform: rotate(135deg);
+    transition: 0.35s ease-in-out;
+    vertical-align: top;
+    width: 10px;
+}
+
+/* OPTIONAL HOVER STATE */
+.faq-drawer__title:hover {
+    color: #4E4B52;
+}
+
+.faq-drawer__trigger:checked+.faq-drawer__title+.faq-drawer__content-wrapper {
+    max-height: 1000px;
+}
+
+.faq-drawer__trigger:checked+.faq-drawer__title::after {
+    transform: rotate(-45deg);
+    transition: 0.25s ease-in-out;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        padding: 80px;
+    }
+}

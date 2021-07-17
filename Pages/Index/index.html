@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Dive Headset - Koko Black</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js"></script>
+  <script src="../jquery-3.6.0.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400&display=swap" rel="stylesheet">
+  <link rel="icon" href="../../Assets/favicon.png">
+</head>
+
+<body>
+
+  <div id="navbar1" style="display:none;">
+    <nav class="nav">
+      <ul>
+        <li id="gradient" style="margin-right:1vh; font-weight: 1000;">DIVE HEADSET</li>
+        <li id="activepage"><a href="../Index/Index.html">Home</a></li>
+        <li><a href="../Features/Features.html">Features</a></li>
+        <li><a href="../Support/Support.html">Support</a></li>
+        <li><a href="../Games/Games.html">Games</a></li>
+        <li><a href="../Store/Store.html">Buy</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="main">
+    <div class="sec1" id="sec1">
+      <div id="navbar">
+        <nav class="nav">
+          <ul>
+            <li id="gradient" style="margin-right: 1em; font-weight: 1000;">DIVE HEADSET</li>
+            <li id="activepage1"><a href="../Index/Index.html">Home</a></li>
+            <li><a href="../Features/Features.html">Features</a></li>
+            <li><a href="../Support/Support.html">Support</a></li>
+            <li><a href="../Games/Games.html">Games</a></li>
+            <li><a href="../Store/Store.html">Buy</a></li>
+          </ul>
+        </nav>
+      </div>
+      <h1 id="gradient">Dive Headset</h1>
+      <h2>A fulldive VR experience</h2>
+      <img style="width: 30em;;display:block;margin-left:auto;margin-right:auto;z-index: 1;" src="../../Assets/cover.png">
+
+      <div id="scrolldownbutton">
+        <button onclick="section2()" id="scroll1">DIVE IN</button>
+      </div>
+      <div class="ocean">
+        <div class="wave"></div>
+        <div class="wave"></div>
+      </div>
+    </div>
+
+    <div class="sec2" id="sec2">
+      <h1>Trailer</h1>
+      <h2>See what the Dive Headset is all about!</h2>
+
+      <div id="video-wrapper">
+        <video width="50%" height="auto" controls>
+          <source src="../../Assets/Video.mp4" type="video/mp4">
+        </video>
+      </div>
+
+      <div class="scroller">
+        <button style="border-bottom-left-radius: 0; border-bottom-right-radius: 0;" onclick="section1()" id="scroll">▲</button>
+        <button style="border-top-left-radius: 0; border-top-right-radius: 0;;" onclick="section3()" id="scroll">▼</button>
+      </div>
+    </div>
+
+    <div class="sec3" id="sec3">
+
+      <div class="container">
+        <div class="row">
+          <h1>Feel free to contact us!</h1>
+        </div>
+        <div class="row">
+          <h4 style="text-align:center">We'd love to hear from you!</h4>
+        </div>
+      </div>
+      <ul>
+        <li><input type="text" placeholder="Name" /></li>
+        <li><input type="text" placeholder="Email" /></li>
+        <li><textarea placeholder="Message"></textarea></li>
+        <li>
+          <div class="btn-lrg submit-btn" onclick="location.href='index.html';">Send Message</div>
+        </li>
+      </ul>
+
+      <div class="scroller">
+        <button onclick="section2()" id="scroll">▲</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

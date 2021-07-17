@@ -1,0 +1,448 @@
+/*
+
+#0B0C10 - Black
+#1F2833 - Lighter Black
+#ebebeb - White
+#66FCF1 - Blue
+#45A29E - Darker Blue
+
+*/
+* {
+    outline: none;
+}
+
+html,
+body {
+    margin: 0px;
+    overflow: auto;
+    overflow-x: hidden;
+    background-color: #ffffff;
+    padding: 0px;
+    scroll-behavior: smooth;
+}
+
+#activepage {
+    color: white;
+    font-weight: bold;
+}
+
+#activepage1 {
+    color: black;
+    font-weight: bold;
+}
+
+#navbar nav {
+    color: rgb(165, 165, 165);
+    z-index: 1000;
+    width: 100vw;
+    padding: 0.75em 0 0.75em 0;
+    position: absolute;
+    text-align: center;
+}
+
+#navbar nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar nav li {
+    display: inline;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 300ms linear, color 1s linear;
+    padding: 0.4em 1em 0.4em 1em;
+    border-radius: 5em;
+}
+
+#navbar li a {
+    text-decoration: none;
+    color: inherit;
+
+}
+
+#navbar nav li:hover {
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+
+#navbar nav li:active {
+    background-color: rgb(63, 63, 63);
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+}
+
+#navbar1 nav {
+    color: rgb(192, 192, 192);
+    z-index: 10005;
+    width: 100vw;
+    padding: 0.75em 0 0.75em 0;
+    position: fixed;
+    background-color: #222222d5;
+    text-align: center;
+}
+
+#navbar1 nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#navbar1 nav li {
+    display: inline;
+    font-size: 1em;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 300ms linear, color 1s linear;
+    padding: 0.4em 1em 0.4em 1em;
+    border-radius: 5em;
+}
+
+#navbar1 li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#navbar1 nav li:hover {
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+#navbar1 nav li:active {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+}
+
+.main {
+    margin: 0px;
+    height: 300vh;
+    display: grid;
+}
+
+.sec1 {
+    height: 100vh;
+    background-color: #ffffff;
+    margin: 0px;
+}
+
+.sec1 h1 {
+    color: #000000;
+    text-align: center;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    font-size: 4em;
+    margin-top: 15vh;
+    z-index: 1;
+
+}
+
+.sec1 h2 {
+    color: #000000;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    margin-top: -3.5em;
+    z-index: 1;
+
+}
+
+#scrolldownbutton {
+    width: 100vw;
+    height: auto;
+
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.sec1 #scroll1 {
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: 0.1em;
+    border-color: black;
+    border-style: solid;
+    border-radius: 50em;
+    font-size: 1.25em;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+
+    position: absolute;
+
+    padding: 0.5em 2.5em;
+    z-index: 1;
+    transition: color 0.5s linear, background-color 0.5s linear;
+    width: auto;
+    height: auto;
+}
+
+.sec1 #scroll1:hover {
+    background-color: transparent;
+    color: black;
+    transition: color 0.5s linear, background-color 0.5s linear;
+}
+
+.sec1 #scroll1:active {
+    background-color: transparent;
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+}
+
+.sec2 {
+    background: rgb(38, 121, 203);
+    background: linear-gradient(180deg, rgba(38, 121, 203, 1) 0%, rgba(9, 9, 121, 1) 100%);
+    height: 100vh;
+}
+
+.sec2 .scroller {
+    background-color: white;
+    border-radius: 100vw;
+    position: absolute;
+    display: grid;
+    width: 3vw;
+    height: 10vh;
+    left: 95vw;
+    top: 140vh;
+}
+
+.sec2 #scroll {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 1px;
+    border-color: white;
+    border-radius: 100vh;
+    position: relative;
+    padding: 0vh 0vw;
+    transition: color 0.5s linear, background-color 0.5s linear, border-color 0.5s linear;
+
+}
+
+.sec2 #scroll:hover {
+    background-color: #5f5f5f;
+    color: white;
+    border-color: #5f5f5f;
+    transition: color 0.5s linear, background-color 0.5s linear, border-color 0.5s linear;
+}
+
+.sec2 #scroll:active {
+    background-color: #5f5f5f;
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+}
+
+.sec2 h1 {
+    text-align: center;
+    color: white;
+    font-size: 3em;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 9vh;
+}
+
+.sec2 h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1em;
+    font-weight: 300;
+    margin-top: -2.5em;
+    z-index: 1;
+
+}
+
+.sec2 #video-wrapper {
+    width: 100vw;
+    height: auto;
+    text-align: center;
+}
+
+.sec3 {
+    background-color: #090979;
+    height: 100vh;
+}
+
+.sec3 .scroller {
+    background-color: white;
+    border-radius: 100vw;
+    position: absolute;
+    display: grid;
+    width: 3vw;
+    height: 10vh;
+    left: 95vw;
+    top: 243vh;
+}
+
+.sec3 #scroll:hover {
+    background-color: #5f5f5f;
+    color: white;
+    border-color: #5f5f5f;
+    transition: color 0.5s linear, background-color 0.5s linear, border-color 0.5s linear;
+}
+
+.sec3 #scroll:active {
+    background-color: #5f5f5f;
+    box-shadow: 0 5px #666;
+    transform: translateY(2px);
+}
+
+.sec3 #scroll {
+    background-color: transparent;
+    color: rgb(0, 0, 0);
+    border: 1px;
+    border-color: white;
+    border-radius: 100vh;
+    position: relative;
+    padding: 0vh 0vw;
+    transition: color 0.5s linear, background-color 0.5s linear, border-color 0.5s linear;
+
+}
+
+.sec3 h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    margin-top: 15vh;
+}
+
+.sec3 h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #dadada;
+}
+
+/* ///// inputs /////*/
+
+
+
+
+
+
+
+
+
+.sec3 input,
+.sec3 textarea {
+    padding: 1em;
+    border: 0;
+    width: 50vw;
+    font-size: 1rem;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border-radius: 0.8em;
+    font-family: 'Poppins', sans-serif;
+    margin: 0.5em;
+
+}
+
+.sec3 ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+
+textarea {
+    width: 100%;
+    min-height: 15em;
+}
+
+
+
+.submit-btn {
+    padding: 7px 35px;
+    border-radius: 60px;
+    display: inline-block;
+    background-color: #6b6b6b;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.06),
+        0 2px 10px 0 rgba(0, 0, 0, 0.07);
+    -webkit-transition: all 300ms ease;
+    transition: all 300ms ease;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.submit-btn:hover {
+    transform: translateY(1px);
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.10),
+        0 1px 1px 0 rgba(0, 0, 0, 0.09);
+}
+
+
+#gradient {
+    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 10s infinite linear;
+}
+
+@-webkit-keyframes hue {
+    from {
+        -webkit-filter: hue-rotate(0deg);
+    }
+
+    to {
+        -webkit-filter: hue-rotate(-360deg);
+    }
+}
+
+
+.ocean {
+    height: 0.5em;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background: #2679cb;
+    z-index: 0;
+}
+
+.wave {
+    background: url("../../Assets/wave.svg") repeat-x;
+    position: absolute;
+    top: -198px;
+    width: 6400px;
+    height: 198px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+    z-index: 1;
+}
+
+h3 {
+    z-index: 5;
+    text-align: center;
+}
+
+.wave:nth-of-type(2) {
+    top: -175px;
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+    opacity: 1;
+}
+
+@keyframes wave {
+    0% {
+        margin-left: 0;
+    }
+
+    100% {
+        margin-left: -1600px;
+    }
+}
+
+@keyframes swell {
+
+    0%,
+    100% {
+        transform: translate3d(0, -25px, 0);
+    }
+
+    50% {
+        transform: translate3d(0, 5px, 0);
+    }
+}
